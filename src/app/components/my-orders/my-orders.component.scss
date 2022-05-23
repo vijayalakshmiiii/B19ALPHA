@@ -1,0 +1,65 @@
+.docs-example-viewer-wrapper {
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  margin: 1em auto;
+  border-radius: 4px;
+}
+
+
+.docs-example-viewer-title {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 8px 20px;
+    color: #ffffff;
+    background: #ff4081;
+  }
+  
+  .docs-example-viewer-title-spacer {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .docs-example-viewer-body {
+    padding: 15px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .docs-example-viewer-wrapper {
+    border: 0;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+    margin: 1em auto;
+    border-radius: 4px;
+  }
+$color-row-hover: #777777;
+
+table {
+  width: 100%;
+}
+
+td,
+th {
+  width: 18%;
+}
+
+tr.example-detail-row {
+  height: 0;
+}
+
+tr.example-element-row:not(.example-expanded-row):hover {
+  background: $color-row-hover;
+  cursor: pointer;
+}
+
+.example-element-row td {
+  border-bottom-width: 0;
+}
+
+.example-element-detail {
+  overflow: hidden;
+  display: flex;
+}

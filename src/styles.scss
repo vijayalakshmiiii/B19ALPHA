@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/@angular/material/prebuilt-themes/indigo-pink.css");
+@import url("../node_modules/bootstrap/dist/css/bootstrap.css");
+
+body {
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-kerning: normal;
+}
+
+.container {
+  padding-top: 60px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.docs-navbar-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  > .mat-button {
+    &:last-child {
+      margin-left: auto;
+    }
+  }
+}
+
+app-nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
