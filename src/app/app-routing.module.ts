@@ -1,14 +1,18 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyOrdersComponent } from './components/my-orders/my-orders.component';
+import { BooksComponent } from './components/books/books.component';
+import { HeaderComponent } from './components/header/header.component';
 
 const routes: Routes = [
-  { path: '', component: MyOrdersComponent },
-  { path: 'my-orders', component: MyOrdersComponent },
+  {path:'books',  component: BooksComponent},
+  { path: '', component: BooksComponent },
+  { path: '', component: BooksComponent, pathMatch: 'full' },
+  { path: 'filter', component: BooksComponent },
+  { path: 'search', component: BooksComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
+  exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

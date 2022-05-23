@@ -1,0 +1,15 @@
+<header>
+    <form>
+        <div class="navbar navbar-dark bg-primary shadow-sm">
+            <div class="navbar-brand align-item-center d-flex">
+
+                <div>
+                    <input type="search" [(ngModel)]="search1"   (keyup)="searching($event)"
+                        placeholder="search products" (search)="cancelSearch()" >
+                </div>
+            </div>
+
+        </div>
+    </form>
+
+</header>

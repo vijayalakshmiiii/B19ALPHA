@@ -3,24 +3,45 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { MyOrdersComponent } from './components/my-orders/my-orders.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MaterialModule } from './material-module';
+import { BooksComponent } from './components/books/books.component';
+import { HeaderComponent } from './components/header/header.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { BookFilterComponent } from './components/book-filter/book-filter.component';
+import {  MatSelectModule } from "@angular/material/select";
+import { MatListModule } from "@angular/material/list";
+import { MatCardModule } from "@angular/material/card";
+import {  MatDividerModule } from "@angular/material/divider";
+import { PriceFilterComponent } from './components/price-filter/price-filter.component';
+import { MatSliderModule } from "@angular/material/slider";
+import { MatAutocompleteModule } from "@angular/material/autocomplete";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 @NgModule({
-  declarations: [AppComponent, NavBarComponent, MyOrdersComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    BooksComponent,
+    BookFilterComponent,
+    PriceFilterComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    Ng2SearchPipeModule,
+    MatSelectModule,
+    MatListModule,
+    MatCardModule,
+    MatDividerModule,
+    MatSliderModule,
+    MatAutocompleteModule,
+    BrowserAnimationsModule
+
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
